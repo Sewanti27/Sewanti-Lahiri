@@ -55,7 +55,7 @@ export default function Discuss(){
             <label className="d-field full">
               <span className="d-label">Email Address</span>
               <div className="d-input-icon-wrap">
-                <span className="d-icon" aria-hidden="true"><img src="/emailaddress.png" alt="" /></span>
+                <span className="d-icon" aria-hidden="true"><img src="./emailaddress.png" alt="" /></span>
                 <input name="entry.1727921108" type="email" value={form.email} onChange={e=> update('email', e.target.value)} placeholder="you@example.com" required />
               </div>
             </label>

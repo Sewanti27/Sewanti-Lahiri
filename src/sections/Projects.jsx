@@ -9,7 +9,7 @@ const projectData = [
     title: 'Scattered Thoughts (Book)',
     subtitle: 'Published Poetry & Reflections',
     description: 'A published collection capturing reflective narratives and expressive poetry. There is emotion, memory, and identity through minimalist structure.',
-    image: '/ScatteredThoughts.avif',
+    image: './ScatteredThoughts.avif',
     tags: ['Books', 'Writing'],
     link: 'https://ebooks.bookleafpub.com/product-page/scattered-thoughts-1'
   },
@@ -18,7 +18,7 @@ const projectData = [
     title: 'Mending Unheard Melodies',
     subtitle: 'Poetry & Emotional Narrative',
     description: 'A companion poetic work centering on emotions, healing, and introspective narrative flow with evocative minimal presentation.',
-    image: '/MendingUnheardMelodies.jpg',
+    image: './MendingUnheardMelodies.jpg',
     tags: ['Books', 'Writing'],
     link: 'https://www.amazon.in/Mending-Unheard-Melodies-Sewanti-Lahiri/dp/9358738286'
   },
@@ -28,7 +28,7 @@ const projectData = [
     title: 'LinkedIn Newsletter Automation (n8n)',
     subtitle: 'Workflow Orchestration & Delivery',
     description: 'Automated LinkedIn newsletter preparation qne publishing workflow using n8n—templating, scheduling, content normalization, and delivery pipeline.',
-    image: '/N8Nnewsletter.webp',
+    image: './N8Nnewsletter.webp',
     tags: ['Automation', 'Workflow'],
     link: '#'
   },
@@ -37,7 +37,7 @@ const projectData = [
     title: 'Invoice PDF Parser to Excel',
     subtitle: 'Data Extraction Automation',
     description: 'Automated ingestion of PDF invoices, structured entity extraction, normalization, and export into Excel-ready tabular format via workflow nodes.',
-    image: '/InvoicePDFparser.png',
+    image: './InvoicePDFparser.png',
     tags: ['Automation', 'Parsing'],
     link: '#'
   },
@@ -47,7 +47,7 @@ const projectData = [
     title: 'Brainwave Site + AI Chatbot',
     subtitle: 'Functional Marketing Site POC',
     description: 'Deployed landing experience integrating an AI assistant. Showcases prompt-driven interaction, modular UI composition, and responsive layout techniques.',
-    image: '/Brainwave.png',
+    image: './Brainwave.png',
     tags: ['Frontend', 'AI'],
     link: 'https://sewanti27.github.io/brainwave_site_deploy/'
   },
@@ -56,7 +56,7 @@ const projectData = [
     title: 'Smart Factory Fire Detection',
     subtitle: 'Vision + Early Alert System',
     description: 'Industrial-oriented fire detection prototype integrating sensor fusion and AI-driven anomaly detection for proactive facility safety response.',
-    image: '/SmartFactoryDetection.jpg',
+    image: './SmartFactoryDetection.jpg',
     tags: ['Automation', 'AI'],
     link: '#'
   }
@@ -124,7 +124,7 @@ export default function Projects() {
                       <img src={p.image} alt={p.title} className="slide-img" />
                       <figcaption className="slide-caption">{p.title.split(' ').slice(0,2).join(' ')}</figcaption>
                       <button className="slide-arrow" type="button" onClick={next} aria-label="Next page">
-                        <img src="/projectarrow.png" alt="Next" className="inner-arrow" />
+                        <img src="./projectarrow.png" alt="Next" className="inner-arrow" />
                       </button>
                     </figure>
                   );

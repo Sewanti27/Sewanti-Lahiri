@@ -1,15 +1,13 @@
 import React from 'react';
 import '../styles/hireme.css';
 
-const portrait = '/Portfolio image.png';
-
 export default function HireMe() {
   return (
     <section id="hire" className="hire-section">
       <div className="hire-shell">
         <div className="hire-media">
           <div className="shape" aria-hidden="true" />
-          <img src={portrait} alt="Profile" className="hire-image" />
+          <img src="./PortfolioImage.png" alt="Profile" className="hire-image" />
         </div>
         <div className="hire-content">
           <h2 className="hire-title">Why <span className="accent">Hire me?</span></h2>

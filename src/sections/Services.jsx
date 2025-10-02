@@ -4,14 +4,14 @@ import '../styles/services.css';
 // Two pages of three service cards each
 const pages = [
   [
-    { id: 'blogging', title: 'Blogging', image: '/cardimages.png', desc: 'Strategic, SEO-aligned articles that build topical authority & trust.' },
-    { id: 'smm', title: 'Social Media Management', image: '/secondcardimage.png', desc: 'Consistent brand voice, engagement & content planning across channels.' },
-    { id: 'landing', title: 'Landing Page', image: '/cardimages.png', desc: 'Conversion-focused pages with clear narrative & persuasive structure.' }
+    { id: 'blogging', title: 'Blogging', image: './cardimages.png', desc: 'Strategic, SEO-aligned articles that build topical authority & trust.' },
+    { id: 'smm', title: 'Social Media Management', image: './secondcardimage.png', desc: 'Consistent brand voice, engagement & content planning across channels.' },
+    { id: 'landing', title: 'Landing Page', image: './cardimages.png', desc: 'Conversion-focused pages with clear narrative & persuasive structure.' }
   ],
   [
-    { id: 'seo', title: 'SEO', image: '/secondcardimage.png', desc: 'Technical + on-page optimization to increase qualified organic traffic.' },
-    { id: 'linkedin', title: 'LinkedIn & Cold Email Outreach', image: '/cardimages.png', desc: 'Targeted outbound frameworks that warm prospects before the pitch.' },
-    { id: 'ads', title: 'Ads Management', image: '/secondcardimage.png', desc: 'Data-driven ad campaigns with continuous creative & funnel iteration.' }
+    { id: 'seo', title: 'SEO', image: './secondcardimage.png', desc: 'Technical and on-page optimization to increase qualified organic traffic.' },
+    { id: 'linkedin', title: 'LinkedIn & Cold Email Outreach', image: './cardimages.png', desc: 'Targeted outbound frameworks that warm prospects before the pitch.' },
+    { id: 'ads', title: 'Ads Management', image: './secondcardimage.png', desc: 'Data-driven ad campaigns with continuous creative & funnel iteration.' }
   ]
 ];
 
@@ -58,7 +58,7 @@ export default function Services() {
                         </div>
                         <p className="card-desc">{card.desc}</p>
                         <a className="card-arrow" href="#discuss" aria-label={`Start a project about ${card.title}`}>
-                          <img src="/arrow.png" alt="" />
+                          <img src="./arrow.png" alt="" />
                         </a>
                       </div>
                     </article>

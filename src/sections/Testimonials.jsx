@@ -21,8 +21,8 @@ export default function Testimonials() {
         <header className="t-head">
           <h2 className="t-title">Testimonials That<br /><span className="accent">Speak to My Results</span></h2>
           <p className="t-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.</p>
-          <img src="/testimonialdesign.png" alt="decorative" className="t-decor t-decor-left" />
-          <img src="/testimonialdesign.png" alt="decorative" className="t-decor t-decor-right" />
+          <img src="./testimonialdesign.png" alt="decorative" className="t-decor t-decor-left" />
+          <img src="./testimonialdesign.png" alt="decorative" className="t-decor t-decor-right" />
         </header>
 
         <div className="t-cards-row">

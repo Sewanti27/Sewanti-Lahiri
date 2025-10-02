@@ -1,0 +1,48 @@
+:root {
+  --exp-accent: #2B3B5B;
+  --exp-text: #1a1e27;
+  --exp-muted: #5b6372;
+  --exp-border: #d8dde4;
+  --exp-node-current: #ff8c2f;
+}
+
+.experience-section { padding: 90px 40px 60px; max-width: 1340px; margin: 0 auto; }
+.exp-shell { max-width: 1180px; margin: 0 auto; }
+
+.exp-heading { font-size: clamp(2.1rem, 5vw, 3rem); margin: 0 0 50px; font-weight: 700; text-align: center; color: var(--exp-text); }
+.exp-heading .accent { color: var(--exp-accent); }
+
+.timeline { display: flex; flex-direction: column; gap: 36px; }
+.timeline-row { display: grid; grid-template-columns: 1fr 120px 1fr; gap: 10px; align-items: start; position: relative; }
+.col { position: relative; }
+
+.company { font-size: 1.05rem; margin: 0 0 6px; font-weight: 600; color: var(--exp-text); }
+.period { font-size: .75rem; letter-spacing: .5px; font-weight: 600; text-transform: uppercase; color: var(--exp-accent); margin-bottom: 8px; }
+.company-desc { font-size: .75rem; line-height: 1.4; margin: 0; color: var(--exp-muted); max-width: 300px; }
+
+.role { font-size: 1.1rem; margin: 0 0 10px; font-weight: 700; color: var(--exp-text); }
+.bullets { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.bullets li { font-size: .78rem; line-height: 1.45; color: var(--exp-muted); position: relative; padding-left: 14px; }
+.bullets li:before { content: ''; position: absolute; left: 0; top: 8px; width: 6px; height: 6px; background: var(--exp-accent); border-radius: 50%; }
+
+/* Axis */
+.col-axis { display: flex; justify-content: center; position: relative; }
+.axis-line { position: absolute; top: 0; bottom: 0; width: 2px; background: repeating-linear-gradient(to bottom, #c9d0d8 0 12px, transparent 12px 24px); }
+.axis-node { position: relative; width: 22px; height: 22px; background: #fff; border: 2px dashed var(--exp-node-current); border-radius: 50%; box-shadow: 0 4px 10px -4px rgba(0,0,0,.15); margin: 18px auto; }
+.axis-node.current { background: var(--exp-node-current); border-style: solid; border-color: var(--exp-accent); }
+.axis-node.current:after { content: ''; position: absolute; inset: 4px; background: var(--exp-accent); border-radius: 50%; box-shadow: 0 0 0 4px rgba(255,140,47,.25); }
+
+/* Responsive */
+@media (max-width: 980px) {
+  .timeline-row { grid-template-columns: 1fr 90px 1fr; }
+}
+@media (max-width: 760px) {
+  .timeline-row { grid-template-columns: 1fr; }
+  .col-axis { order: -1; height: 90px; }
+  .axis-line { left: 50%; transform: translateX(-50%); height: 100%; }
+  .axis-node { margin: 14px auto 0; }
+  .company, .role { text-align: center; }
+  .bullets li { padding-left: 0; }
+  .bullets li:before { display: none; }
+  .company-desc { margin: 0 auto 20px; text-align: center; }
+}

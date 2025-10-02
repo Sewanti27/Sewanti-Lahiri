@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/hero.css';
 
-import portrait from '/PortfolioImage.png';
+import portrait from 'Sewanti-Lahiri/PortfolioImage.png';
 import helloDesign from '/Hellodesign.png';
 import productDesign from '/productdesign.png';
 

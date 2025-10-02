@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/hero.css';
 
-const portrait = '/Portfolio image.png';
-const helloDesign = '/Hellodesign.png';
-const productDesign = '/productdesign.png';
+import portrait from 'public/PortfolioImage.png';
+import helloDesign from 'public/Hellodesign.png';
+import productDesign from 'public/productdesign.png';
 
 export default function Hero() {
   return (

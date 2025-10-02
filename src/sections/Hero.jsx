@@ -1,10 +1,5 @@
 import React from 'react';
 import '../styles/hero.css';
-
-import portrait from 'Sewanti-Lahiri/PortfolioImage.png';
-import helloDesign from '/Hellodesign.png';
-import productDesign from '/productdesign.png';
-
 export default function Hero() {
   return (
     <section id="home" className="hero">
@@ -20,16 +15,16 @@ export default function Hero() {
         <div className="center-stack">
           <div className="hello-wrap">
             <div className="hello-chip">Hello!</div>
-            <img src={helloDesign} className="hello-design" alt="" aria-hidden="true" />
+            <img src="./Hellodesign.png" className="hello-design" alt="" aria-hidden="true" />
           </div>
           <h1 className="hero-title">
             I'm <span className="accent">Sewanti</span>, <br />
             <span className="title-break">Digital Marketer</span>
-            <img src={productDesign} className="product-design" alt="" aria-hidden="true" />
+            <img src="./productdesign.png" className="product-design" alt="" aria-hidden="true" />
           </h1>
           <div className="hero-visual">
             <div className="semi-circle" aria-hidden="true" />
-            <img src={portrait} alt="Sewanti" className="hero-portrait" />
+            <img src="./PortfolioImage.png" alt="Sewanti" className="hero-portrait" />
             <div className="hero-cta-overlay">
               <div className="cta-combo floating">
                 <a href="https://drive.google.com/file/d/1XIUxFR2aoXT3czwrEApI5K6u8MrQUfXv/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn primary" aria-label="View resume / portfolio">Portfolio ↗</a>
